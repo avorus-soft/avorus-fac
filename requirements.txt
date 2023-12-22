@@ -1,0 +1,2 @@
+pysnmp==4.4.12
+paho-mqtt==1.6.1
