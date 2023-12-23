@@ -6,10 +6,9 @@ from pysnmp.carrier.asyncore.dgram import udp
 from pysnmp.entity.rfc3413 import ntfrcv
 
 import paho.mqtt.client as mqtt
-from paho.mqtt.client import Client, SubscribeOptions, MQTTMessage
 
 PORT = 8080
-COMMUNITYSTRING = '3aezBkWG'
+COMMUNITYSTRING = os.environ['COMMUNITYSTRING']
 
 
 class App(Thread):
